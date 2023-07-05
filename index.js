@@ -191,3 +191,15 @@ firstGameContainer.appendChild(topPledgeGameName);
 const runnerUpName = document.createElement("p");
 runnerUpName.innerHTML = secondGame.name;
 secondGameContainer.appendChild(runnerUpName);
+
+/********************
+ * Button in the header that scrolls to view games feature
+ */
+
+const gamesButton = document.getElementById("games-button");
+gamesButton.addEventListener("click", scrollToGames);
+
+function scrollToGames() {
+  const gamesSection = document.getElementById("games-section");
+  gamesSection.scrollIntoView({ behavior: "smooth" });
+}
