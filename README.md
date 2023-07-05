@@ -24,6 +24,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
+
+https://github.com/dawsonpar/web102_prework/assets/76459102/e453914d-7d49-4e38-a965-f803a8d6d6f1
+
+
 <img src='https://imgur.com/a/S8KGtQZ' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
