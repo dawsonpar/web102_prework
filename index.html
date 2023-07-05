@@ -30,7 +30,7 @@
 
     <!-- top games & other interesting stats -->
     <section id="stats-section">
-      <h2>Stats</h2>
+      <h2 class="text-center">Stats</h2>
       <div class="stats-container">
         <div class="stats-card">
           <h3>Individual Contributions</h3>
@@ -57,12 +57,16 @@
 
     <!-- list of games funded by Sea Monster -->
     <section id="games-section">
-      <h2>Our Games</h2>
-      <p>Check out each of our games below!</p>
+      <h2 class="text-center">Our Games</h2>
+      <p class="text-center">Check out each of our games below!</p>
       <div id="button-container">
         <button id="unfunded-btn">Show Unfunded Only</button>
         <button id="funded-btn">Show Funded Only</button>
         <button id="all-btn">Show All Games</button>
+      </div>
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search games..." />
+        <button id="search-button">Search</button>
       </div>
       <div id="games-container"></div>
     </section>

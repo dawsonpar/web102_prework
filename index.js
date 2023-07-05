@@ -203,3 +203,31 @@ function scrollToGames() {
   const gamesSection = document.getElementById("games-section");
   gamesSection.scrollIntoView({ behavior: "smooth" });
 }
+
+/********************
+ * Search bar feature
+ */
+
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
+
+function searchGames() {
+  const searchTerm = searchInput.value.toLowerCase();
+
+  // filter games based on search input
+  const filteredGames = GAMES_JSON.filter((game) => {
+    const gameName = game.name.toLowerCase();
+    return gameName.includes(searchTerm);
+  });
+
+  // clear games
+  deleteChildElements(gamesContainer);
+
+  // display search results
+  addGamesToPage(filteredGames);
+
+  // clear search bar after click
+  searchInput.value = "";
+}
+
+searchButton.addEventListener("click", searchGames);
